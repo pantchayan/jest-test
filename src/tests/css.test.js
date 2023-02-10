@@ -18,7 +18,7 @@ describe("App.js", () => {
       },
     });
     page = await browser.newPage();
-    await page.goto('http://localhost:3001');
+    await page.goto('http://localhost:3000');
   }, 100000);
 
   it("h1 tag gas blue color", async () => {
