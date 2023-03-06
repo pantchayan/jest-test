@@ -1,4 +1,4 @@
-const puppeteer = require('puppeteer');
+const puppeteer = require("puppeteer");
 
 describe("App.js", () => {
   let browser;
@@ -18,12 +18,12 @@ describe("App.js", () => {
       },
     });
     page = await browser.newPage();
-    await page.goto('http://localhost:3000');
+    await page.goto("http://localhost:3000");
   }, 100000);
 
   it("contains the h1 tag", async () => {
-    const heading = await page.$('h1');
-    expect(heading).toBeDefined();
+    const heading = await page.$("h2");
+    expect(heading).toBeTruthy();
   });
 
   afterAll(() => browser.close());
